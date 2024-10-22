@@ -1,2 +1,2 @@
 # Introduction "Azure Container Apps"
-![Alt text](../images/welcome.png)
+<img width='800' src='../images/welcome.png'/><br>
