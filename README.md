@@ -20,3 +20,6 @@ Les applications construites sur Azure Container Apps peuvent évoluer dynamique
 Ce service interressant évolue assez vite, Microsoft publie ici la Roadmap : https://github.com/orgs/microsoft/projects/540
 
 # Quelques concepts
+## Plans
+Azure Container Apps propose deux types de plans :
+##### Plan « Dedicated »
