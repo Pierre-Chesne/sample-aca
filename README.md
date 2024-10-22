@@ -22,5 +22,7 @@ Ce service interressant évolue assez vite, Microsoft publie ici la Roadmap : ht
 # Quelques concepts
 __Plans__
 Azure Container Apps propose deux types de plans :<br>
-Plan « Dedicated »<br>
-Le plan dédié consiste en une série de profils de charge de travail qui vont du profil de consommation par défaut à des profils qui disposent d'un matériel dédié personnalisé pour des besoins de calcul spécialisés.
+Plan « Dedicated »:<br>
+Le plan dédié consiste en une série de profils de charge de travail qui vont du profil de consommation par défaut à des profils qui disposent d'un matériel dédié personnalisé pour des besoins de calcul spécialisés.<br><br>
+Plan « Consumption »:<br>
+Le plan Consommation propose une architecture « serverless » qui permet à vos applications d'évoluer à la demande. Les applications peuvent évoluer jusqu'à zéro, et vous ne payez que pour les applications en cours d'exécution. Utilisez le plan de consommation lorsque vous n'avez pas d'exigences matérielles spécifiques pour votre application de conteneur.
