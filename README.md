@@ -39,3 +39,80 @@ az containerapp env show \
    --resource-group $RESOURCE_GROUP_NAME
 ```
 
+```
+{
+  "id": "/subscriptions/ab7b7ae7-e46c-4663-ad31-d93710428185/resourceGroups/rg-aca-az-cli/providers/Microsoft.App/managedEnvironments/env-aca",
+  "location": "France Central",
+  "name": "env-aca",
+  "properties": {
+    "appInsightsConfiguration": null,
+    "appLogsConfiguration": {
+      "destination": "log-analytics",
+      "logAnalyticsConfiguration": {
+        "customerId": "f6a62853-033c-4708-9c2c-066e070c35ed",
+        "dynamicJsonColumns": false,
+        "sharedKey": null
+      }
+    },
+    "customDomainConfiguration": {
+      "certificateKeyVaultProperties": null,
+      "certificatePassword": null,
+      "certificateValue": null,
+      "customDomainVerificationId": "BB11B0C6B0BA3E3FBDD33887C540CD512FDF5D968AD7A552378FEACADAB27370",
+      "dnsSuffix": null,
+      "expirationDate": null,
+      "subjectName": null,
+      "thumbprint": null
+    },
+    "daprAIConnectionString": null,
+    "daprAIInstrumentationKey": null,
+    "daprConfiguration": {
+      "version": "1.12.5"
+    },
+    "defaultDomain": "jollybeach-36002f2f.francecentral.azurecontainerapps.io",
+    "eventStreamEndpoint": "https://francecentral.azurecontainerapps.dev/subscriptions/ab7b7ae7-e46c-4663-ad31-d93710428185/resourceGroups/rg-aca-az-cli/managedEnvironments/env-aca/eventstream",
+    "infrastructureResourceGroup": "ME_env-aca_rg-aca-az-cli_francecentral",
+    "kedaConfiguration": {
+      "version": "2.15.1"
+    },
+    "openTelemetryConfiguration": null,
+    "peerAuthentication": {
+      "mtls": {
+        "enabled": false
+      }
+    },
+    "peerTrafficConfiguration": {
+      "encryption": {
+        "enabled": false
+      }
+    },
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Disabled",
+    "staticIp": "10.0.0.20",
+    "vnetConfiguration": {
+      "dockerBridgeCidr": null,
+      "infrastructureSubnetId": "/subscriptions/ab7b7ae7-e46c-4663-ad31-d93710428185/resourceGroups/rg-aca-az-cli/providers/Microsoft.Network/virtualNetworks/vnet-aca/subnets/subnet-aca",
+      "internal": true,
+      "platformReservedCidr": null,
+      "platformReservedDnsIP": null
+    },
+    "workloadProfiles": [
+      {
+        "name": "Consumption",
+        "workloadProfileType": "Consumption"
+      }
+    ],
+    "zoneRedundant": false
+  },
+  "resourceGroup": "rg-aca-az-cli",
+  "systemData": {
+    "createdAt": "2024-10-21T13:55:55.7306081",
+    "createdBy": "pierre.chesne@cellenza.com",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-10-21T13:55:55.7306081",
+    "lastModifiedBy": "pierre.chesne@cellenza.com",
+    "lastModifiedByType": "User"
+  },
+  "type": "Microsoft.App/managedEnvironments"
+}
+```
