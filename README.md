@@ -16,3 +16,5 @@ Les applications construites sur Azure Container Apps peuvent évoluer dynamique
 * Event-driven processing
 * CPU or memory load
 * Any KEDA-supported scaler
+
+# Quelques concepts
