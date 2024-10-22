@@ -1,2 +1,2 @@
 # Introduction "Azure Container Apps"
-![Alt text](./images/welcome.png)
+![Alt text](../images/welcome.png)
