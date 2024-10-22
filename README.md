@@ -17,4 +17,6 @@ Les applications construites sur Azure Container Apps peuvent évoluer dynamique
 * CPU or memory load
 * Any KEDA-supported scaler
 
+Ce service interressant évolue assez vite, Microsoft publie ici la Roadmap : https://github.com/orgs/microsoft/projects/540
+
 # Quelques concepts
