@@ -41,7 +41,7 @@ az containerapp env show \
 
 ```
 {
-  "id": "/subscriptions/ab7b7ae7-e46c-4663-ad31-d93710428185/resourceGroups/rg-aca-az-cli/providers/Microsoft.App/managedEnvironments/env-aca",
+  "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-aca-az-cli/providers/Microsoft.App/managedEnvironments/env-aca",
   "location": "France Central",
   "name": "env-aca",
   "properties": {
@@ -91,7 +91,7 @@ az containerapp env show \
     "staticIp": "10.0.0.20",
     "vnetConfiguration": {
       "dockerBridgeCidr": null,
-      "infrastructureSubnetId": "/subscriptions/ab7b7ae7-e46c-4663-ad31-d93710428185/resourceGroups/rg-aca-az-cli/providers/Microsoft.Network/virtualNetworks/vnet-aca/subnets/subnet-aca",
+      "infrastructureSubnetId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-aca-az-cli/providers/Microsoft.Network/virtualNetworks/vnet-aca/subnets/subnet-aca",
       "internal": true,
       "platformReservedCidr": null,
       "platformReservedDnsIP": null
