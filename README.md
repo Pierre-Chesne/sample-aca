@@ -35,10 +35,15 @@ Lorsque plusieurs applications conteneurisées se trouvent dans le même environ
 Il faut comprendre qu'un "Container Apps Environment" est l'environnement (AKS) sur lequel on déplpoie les applications conteneurisées (uniquement sous linux).
 Quand on déploie un "Container Apps Environment", on paramètre : - La "zone reduncy"(uniquement s'il y a une intégration avec un vNet) - les Workload profiles (plans) - le monitoring pour les Logs (Azure Log Analytics / Azure Monitor / Pas de stockage de Logs). - Networking, s'il on souhaite utiliser l'intégration d'un Virtual Network, s'il on souhaite exposer la "Virtual IP" à l'extérieur ou pas. (Internal/External)<br>
 Selon vos besoins, on peut utiliser un ou plusieurs environnements Container Apps.<br>
+En résumer<br>
 On utilise __un environnement__ pour :<br>
 - Déployer différentes applications sur le même VNet
 - Instrumenter les applications Dapr qui communiquent via l'API d'invocation de services Dapr et partage la même configuration Dapr
-- o	Faire en sorte que les applications partagent la même destination de journal de logs
+- Faire en sorte que les applications partagent la même destination de journal de logs
+On utilise __plusieurs environnements__ pour :<br>
+- Pour que les applications ne partagent pas les mêmes resources (compute/mémoire/…)
+- Pour que les applications ne partagent pas l’API de Dapr
+- On recherche une isolation totale (Équipe, environnement test, production,  ….)
 
 Voici les propriétés d'un "Container Apps Environment":
 ```
