@@ -116,3 +116,4 @@ az containerapp env show \
   "type": "Microsoft.App/managedEnvironments"
 }
 ```
+On peut remarquer ci-dessus quelques informations interressantes: la "staticIp" (la "Virtual IP" ) - le "defaultDomain" (blabla-aleatoire.region.azurecontainerapps.io). Chaque conteneurs dans l'environnement aura le nom nomduconteneur.labla-aleatoire.region.azurecontainerapps.io 
