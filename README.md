@@ -239,3 +239,13 @@ N'est visible dans la console que : <br>
 Les deux "node pools" ne sont pas visible ! (on ne gère pas :-)<br><br>
 
 __3/ Container__<br>
+Azure Container Apps gère pour vous les détails de « Kubernetes » et de l'orchestration des conteneurs. Les conteneurs d'Azure Container Apps peuvent utiliser le moteur d'exécution, le langage de programmation ou le runtime de développement de votre choix.<br>
+Azure Containers Apps supporte uniquement les conteneurs :
+- Toute image de conteneur x86-64 (linux/amd64) basée sur Linux
+- Conteneurs provenant de n'importe quel registre de conteneurs public ou privé
+- Conteneurs « sidecar » et « init »
+Les limitations d'Azure Container Apps :  https://learn.microsoft.com/en-us/azure/container-apps/quotas <br>
+Lorsqu’on utilise un plan de consommation, le total de CPU et de la mémoire allouée à tous les conteneurs d'une application de conteneur doit correspondre à l'une des combinaisons suivantes:<br>
+<img width='800' src='./Images/vcpu-memory.png'/><br>
+Pour information nous sommes limités à 100 coeurs par environnement (avec les réplicas)<br>
+
