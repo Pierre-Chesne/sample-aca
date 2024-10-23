@@ -5,7 +5,7 @@ RESOURCE_GROUP_NAME="rg-aca-az-cli"
 LOCATION="francecentral"
 
 VNET_NAME="vnet-aca"
-PREFIX_VNET="10.0.0.0/16"
+PREFIX_VNET="10.0.0.0/24"
 SUBNET_ACA_NAME="subnet-aca"
 PREFIX_SUBNET="10.0.0.0/27"
 SUBNET_MAIN_NAME="subnet-main"
