@@ -17,6 +17,8 @@ Les applications construites sur Azure Container Apps peuvent évoluer dynamique
 * CPU or memory load
 * Any KEDA-supported scaler
 
+Dans Azure Container Apps on dispose également d'une version managée des API Dapr. Les API Dapr disponibles incluent "Service to Service calls", "Pub/Sub", "Event Bindings", "State Stores"et "Actors".https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr
+
 Ce service interressant évolue assez vite, Microsoft publie ici la Roadmap : https://github.com/orgs/microsoft/projects/540
 
 # Quelques concepts
