@@ -227,9 +227,13 @@ az containerapp env create \
    --logs-workspace-key $WORKSPACE_KEY \
    --location $LOCATION
 ```
-A la fin de l'execution du script on doit avoir les ressources ci-dessous<br>
-N'est visible dans la console: <br>
-- que "l'internal loadbalancer" dans un "resource group" ME_env-aca_rg-aca-az-cli_francecentral (cela doit parler au Jedi d'AKS :-))
-- 
 
 <img width='800' src='./Images/environnement.png'/><br>
+
+A la fin de l'execution du script on doit avoir les ressources ci-dessus<br>
+N'est visible dans la console: <br>
+- "l'internal loadbalancer" dans un "resource group" ME_env-aca_rg-aca-az-cli_francecentral (cela doit parler au Jedi d'AKS :-)
+- Le Log Analytics workspace
+- vNet/Subnet
+- Container Apps Environment
+Les deux "node pools" ne sont pas visible ! (on ne gère pas :-)
