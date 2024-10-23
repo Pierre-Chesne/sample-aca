@@ -40,6 +40,7 @@ On utilise __un environnement__ pour :<br>
 - Déployer différentes applications sur le même VNet
 - Instrumenter les applications Dapr qui communiquent via l'API d'invocation de services Dapr et partage la même configuration Dapr
 - Faire en sorte que les applications partagent la même destination de journal de logs<br>
+
 On utilise __plusieurs environnements__ pour :<br>
 - Pour que les applications ne partagent pas les mêmes resources (compute/mémoire/…)
 - Pour que les applications ne partagent pas l’API de Dapr
