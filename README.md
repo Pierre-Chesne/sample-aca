@@ -231,7 +231,7 @@ az containerapp env create \
 <img width='800' src='./Images/environnement.png'/><br>
 
 A la fin de l'execution du script on doit avoir les ressources ci-dessus<br>
-N'est visible dans la console: <br>
+N'est visible dans la console que: <br>
 - "l'internal loadbalancer" dans un "resource group" ME_env-aca_rg-aca-az-cli_francecentral (cela doit parler au Jedi d'AKS :-)
 - Le Log Analytics workspace
 - vNet/Subnet
