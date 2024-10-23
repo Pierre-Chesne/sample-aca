@@ -7,7 +7,7 @@ LOCATION="francecentral"
 VNET_NAME="vnet-aca"
 PREFIX_VNET="10.0.0.0/24"
 SUBNET_ACA_NAME="subnet-aca"
-PREFIX_SUBNET="10.0.0.0/27"
+PREFIX_SUBNET_ACA="10.0.0.0/27"
 SUBNET_MAIN_NAME="subnet-main"
 PREFIX_SUBNET_MAIN="10.0.0.32/27"
 SUBNET_PE_NAME="subnet-pe"
@@ -70,7 +70,7 @@ az network vnet subnet create \
     --name $SUBNET_ACA_NAME \
     --resource-group $RESOURCE_GROUP_NAME \
     --vnet-name $VNET_NAME \
-    --address-prefix $PREFIX_SUBNET \
+    --address-prefix $PREFIX_SUBNET_ACA \
     --delegations "Microsoft.App/environments"
 
 echo "Creating the subnet main..."

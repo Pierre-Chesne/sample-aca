@@ -133,12 +133,49 @@ az containerapp env show \
 On peut remarquer ci-dessus quelques informations interressantes: la "staticIp" (la "Virtual IP" ) - le "defaultDomain" (blabla-aleatoire.region.azurecontainerapps.io). Chaque conteneurs dans l'environnement aura le nom nomduconteneur.labla-aleatoire.region.azurecontainerapps.io<br><br>
 
 Exemple de code d'un déploiement "Container Apps Environment" dans un vNet existant:<br>
+- Création d'un "resource group"
+- Création d'un Vnet et trois Subnet (dont un avec un "Delegate to Microsoft.App/environments)
 - Création d'un "Log Analytics workspace"
 - Récupération de l'ID et d'une Key du "Log Analytics workspace"
 - Récupération de l'ID du subnet pour joindre le "Container Apps Environment"
 - Création du "Container Apps Environment" (https://learn.microsoft.com/en-us/cli/azure/containerapp/env?view=azure-cli-latest#az-containerapp-env-create)
 
 ```
+echo "Creating the resource group..."
+az group create \
+    --name $RESOURCE_GROUP_NAME \
+    --location $LOCATION \
+    --tags "env=test"
+
+echo "Creating the virtual network..."
+az network vnet create \
+    --name $VNET_NAME \
+    --resource-group $RESOURCE_GROUP_NAME \
+    --location $LOCATION \
+    --address-prefix $PREFIX_VNET
+
+echo "Creating the subnet with delegation "Microsoft.App/environments"..."
+az network vnet subnet create \
+    --name $SUBNET_ACA_NAME \
+    --resource-group $RESOURCE_GROUP_NAME \
+    --vnet-name $VNET_NAME \
+    --address-prefix $PREFIX_SUBNET_ACA \
+    --delegations "Microsoft.App/environments"
+
+echo "Creating the subnet main..."
+az network vnet subnet create \
+    --name $SUBNET_MAIN_NAME \
+    --resource-group $RESOURCE_GROUP_NAME \
+    --vnet-name $VNET_NAME \
+    --address-prefix $PREFIX_SUBNET_MAIN
+
+echo "Creating the subnet pe (pg)..."
+az network vnet subnet create \
+    --name $SUBNET_PE_NAME \
+    --resource-group $RESOURCE_GROUP_NAME \
+    --vnet-name $VNET_NAME \
+    --address-prefix $PREFIX_SUBNET_PE
+
 echo "Creating the Log Analytics workspace law-$CONTAINERAPPS_ENVIRONMENT..."
 az monitor log-analytics workspace create \
    --resource-group $RESOURCE_GROUP_NAME \
@@ -178,4 +215,4 @@ az containerapp env create \
    --logs-workspace-key $WORKSPACE_KEY \
    --location $LOCATION
 ```
-
+<img width='800' src='./Images/environnement.png'/><br>
