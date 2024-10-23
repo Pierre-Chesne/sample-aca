@@ -116,4 +116,52 @@ az containerapp env show \
   "type": "Microsoft.App/managedEnvironments"
 }
 ```
-On peut remarquer ci-dessus quelques informations interressantes: la "staticIp" (la "Virtual IP" ) - le "defaultDomain" (blabla-aleatoire.region.azurecontainerapps.io). Chaque conteneurs dans l'environnement aura le nom nomduconteneur.labla-aleatoire.region.azurecontainerapps.io 
+On peut remarquer ci-dessus quelques informations interressantes: la "staticIp" (la "Virtual IP" ) - le "defaultDomain" (blabla-aleatoire.region.azurecontainerapps.io). Chaque conteneurs dans l'environnement aura le nom nomduconteneur.labla-aleatoire.region.azurecontainerapps.io<br><br>
+
+Exemple de code d'un déploiement "Container Apps Environment" dans un vNet existant:<br>
+- Création d'un "Log Analytics workspace"
+- Récupération de l'ID et d'une Key du "Log Analytics workspace"
+- Récupération de l'ID du subnet pour joindre le "Container Apps Environment"
+- Création du "Container Apps Environment" (https://learn.microsoft.com/en-us/cli/azure/containerapp/env?view=azure-cli-latest#az-containerapp-env-create)
+
+```
+echo "Creating the Log Analytics workspace law-$CONTAINERAPPS_ENVIRONMENT..."
+az monitor log-analytics workspace create \
+   --resource-group $RESOURCE_GROUP_NAME \
+   --workspace-name "law-$CONTAINERAPPS_ENVIRONMENT" \
+   --location $LOCATION
+
+
+echo "Getting the workspace ID..."
+WORKSPACE_ID=$(az monitor log-analytics workspace show \
+  --resource-group $RESOURCE_GROUP_NAME \
+  --workspace-name "law-$CONTAINERAPPS_ENVIRONMENT" \
+  --query customerId -o tsv)
+
+
+echo "Getting the workspace key..."
+WORKSPACE_KEY=$(az monitor log-analytics workspace get-shared-keys \
+   --resource-group $RESOURCE_GROUP_NAME \
+   --workspace-name "law-$CONTAINERAPPS_ENVIRONMENT" \
+   --query primarySharedKey -o tsv)
+
+
+echo "Getting the subnet id subnet-aca..."
+SUBNET_ACA_ID=$(az network vnet subnet show \
+   --resource-group $RESOURCE_GROUP_NAME \
+   --vnet-name $VNET_NAME \
+   --name $SUBNET_ACA_NAME \
+   --query id -o tsv)
+
+
+echo "Creating the environment for Azure Container Apps..."
+az containerapp env create \
+   --name $CONTAINERAPPS_ENVIRONMENT \
+   --resource-group $RESOURCE_GROUP_NAME \
+   --internal-only true \
+   --infrastructure-subnet-resource-id $SUBNET_ACA_ID \
+   --logs-workspace-id $WORKSPACE_ID \
+   --logs-workspace-key $WORKSPACE_KEY \
+   --location $LOCATION
+```
+
