@@ -141,6 +141,18 @@ Exemple de code d'un déploiement "Container Apps Environment" dans un vNet exis
 - Création du "Container Apps Environment" (https://learn.microsoft.com/en-us/cli/azure/containerapp/env?view=azure-cli-latest#az-containerapp-env-create)
 
 ```
+RESOURCE_GROUP_NAME="rg-aca-az-cli"
+LOCATION="francecentral"
+
+VNET_NAME="vnet-aca"
+PREFIX_VNET="10.0.0.0/24"
+SUBNET_ACA_NAME="subnet-aca"
+PREFIX_SUBNET_ACA="10.0.0.0/27"
+SUBNET_MAIN_NAME="subnet-main"
+PREFIX_SUBNET_MAIN="10.0.0.32/27"
+SUBNET_PE_NAME="subnet-pe"
+PREFIX_SUBNET_PE="10.0.0.64/27"
+
 echo "Creating the resource group..."
 az group create \
     --name $RESOURCE_GROUP_NAME \
@@ -215,4 +227,9 @@ az containerapp env create \
    --logs-workspace-key $WORKSPACE_KEY \
    --location $LOCATION
 ```
+A la fin de l'execution du script on doit avoir les ressources ci-dessous<br>
+N'est visible dans la console: <br>
+- que "l'internal loadbalancer" dans un "resource group" ME_env-aca_rg-aca-az-cli_francecentral (cela doit parler au Jedi d'AKS :-))
+- 
+
 <img width='800' src='./Images/environnement.png'/><br>
