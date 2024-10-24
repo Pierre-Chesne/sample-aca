@@ -236,7 +236,7 @@ N'est visible dans la console que : <br>
 - "l'internal loadbalancer" dans un "resource group" ME_env-aca_rg-aca-az-cli_francecentral (cela doit parler au Jedi d'AKS :-)
 - Le Log Analytics workspace
 - vNet/Subnet
-- Container Apps Environment
+- Container Apps Environment<br>
 Les deux "node pools" ne sont pas visible ! (on ne gère pas :-)<br><br>
 
 __3/ Container__<br>
