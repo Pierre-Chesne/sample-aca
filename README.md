@@ -84,7 +84,7 @@ az containerapp env show \
       "version": "1.12.5"
     },
     "defaultDomain": "jollybeach-36002f2f.francecentral.azurecontainerapps.io",
-    "eventStreamEndpoint": "https://francecentral.azurecontainerapps.dev/subscriptions/ab7b7ae7-e46c-4663-ad31-d93710428185/resourceGroups/rg-aca-az-cli/managedEnvironments/env-aca/eventstream",
+    "eventStreamEndpoint": "https://francecentral.azurecontainerapps.dev/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-aca-az-cli/managedEnvironments/env-aca/eventstream",
     "infrastructureResourceGroup": "ME_env-aca_rg-aca-az-cli_francecentral",
     "kedaConfiguration": {
       "version": "2.15.1"
@@ -250,6 +250,7 @@ Lorsqu’on utilise un plan de consommation, le total de CPU et de la mémoire a
 <img width='800' src='./Images/vcpu-memory.png'/><br>
 Pour information nous sommes limités à 100 coeurs par environnement (avec les réplicas)<br><br>
 Exemple de code 'Az CLI' pour le déploiement d'une application depuis une image publique:<br>
+
 ```
 RESOURCE_GROUP_NAME="rg-aca-az-cli"
 LOCATION="francecentral"
@@ -285,6 +286,56 @@ az containerapp create \
    --memory 1.5Gi \
    --cpu 0.75 \
    --query properties.configuration.ingress.fqdn
+```
+
+On a également la possibilité de déployer une appication en s'appuyant sur un fichier YAML <br>
+https://learn.microsoft.com/en-us/azure/container-instances/container-instances-reference-yaml <br>
+L'équivalent de la commande ci-dessus<br>
+
+
+```
+location: France Central
+resourceGroup: rg-aca-az-cli
+type: Microsoft.App/containerApps
+workloadProfileName: Consumption
+properties:
+  configuration:
+    activeRevisionsMode: Single
+    ingress:
+      allowInsecure: false
+      exposedPort: 0
+      external: true
+      targetPort: 80
+      traffic:
+      - latestRevision: true
+        weight: 100
+      transport: Auto
+    maxInactiveRevisions: 100
+  managedEnvironmentId: /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-aca-az-cli/providers/Microsoft.App/managedEnvironments/env-aca
+  patchingMode: Automatic
+  provisioningState: Succeeded
+  runningStatus: Running
+  template:
+    containers:
+    - image: mcr.microsoft.com/k8se/quickstart:latest
+      imageType: ContainerImage
+      name: aca-quickstart
+      resources:
+        cpu: 0.75
+        ephemeralStorage: 4Gi
+        memory: 1.5Gi
+    revisionSuffix: ''
+    scale:
+      maxReplicas: 3
+      minReplicas: 1
+      rules: null
+  workloadProfileName: Consumption
+```
+```
+az containerapp create \
+   --name $CONTAINERAPP_NAME \
+   --resource-group $RESOURCE_GROUP_NAME \
+   --yaml ./config.yaml
 ```
 
 
