@@ -152,6 +152,7 @@ SUBNET_MAIN_NAME="subnet-main"
 PREFIX_SUBNET_MAIN="10.0.0.32/27"
 SUBNET_PE_NAME="subnet-pe"
 PREFIX_SUBNET_PE="10.0.0.64/27"
+CONTAINERAPPS_ENVIRONMENT="env-aca"
 
 echo "Creating the resource group..."
 az group create \
