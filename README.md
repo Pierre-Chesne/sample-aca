@@ -237,6 +237,7 @@ N'est visible dans la console que : <br>
 - Le Log Analytics workspace
 - vNet/Subnet
 - Container Apps Environment<br>
+
 Les deux "node pools" ne sont pas visible ! (on ne gère pas :-)<br><br>
 
 __3/ Container__<br>
