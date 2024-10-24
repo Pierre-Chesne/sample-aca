@@ -248,7 +248,7 @@ Azure Containers Apps supporte uniquement les conteneurs :
 Les limitations d'Azure Container Apps :  https://learn.microsoft.com/en-us/azure/container-apps/quotas <br>
 Lorsqu’on utilise un plan de consommation, le total de CPU et de la mémoire allouée à tous les conteneurs d'une application de conteneur doit correspondre à l'une des combinaisons suivantes:<br>
 <img width='800' src='./Images/vcpu-memory.png'/><br>
-Pour information nous sommes limités à 100 coeurs par environnement (avec les réplicas)<br>
+Pour information nous sommes limités à 100 coeurs par environnement (avec les réplicas)<br><br>
 Exemple de code 'Az CLI' pour le déploiement d'une application:<br>
 ```
 RESOURCE_GROUP_NAME="rg-aca-az-cli"
