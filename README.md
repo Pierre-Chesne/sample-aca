@@ -251,7 +251,13 @@ Les limitations d'Azure Container Apps :  https://learn.microsoft.com/en-us/azur
 Lorsqu’on utilise un plan de consommation, le total de CPU et de la mémoire allouée à tous les conteneurs d'une application de conteneur doit correspondre à l'une des combinaisons suivantes:<br><br>
 <img width='800' src='./Images/vcpu-memory.png'/><br>
 Pour information nous sommes limités à 100 coeurs par environnement (avec les réplicas)<br><br>
-Exemple de code 'Az CLI' pour le déploiement d'une application depuis une image publique:<br>
+Exemple de code 'Az CLI' pour le déploiement d'une application depuis une image publique<br>
+Ce code déploie :<br>
+
+- Un "resource group"
+- Un "Container Apps Environment" sans "Log Analytic workspace"
+- Une "Azure Container Apps" depuis une image publique et exposée sur Internet
+
 
 ```
 RESOURCE_GROUP_NAME="rg-aca-az-cli"
