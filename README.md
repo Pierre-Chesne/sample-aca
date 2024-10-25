@@ -251,6 +251,14 @@ Les limitations d'Azure Container Apps :  https://learn.microsoft.com/en-us/azur
 Lorsqu’on utilise un plan de consommation, le total de CPU et de la mémoire allouée à tous les conteneurs d'une application de conteneur doit correspondre à l'une des combinaisons suivantes:<br><br>
 <img width='800' src='./Images/vcpu-memory.png'/><br>
 Pour information nous sommes limités à 100 coeurs par environnement (avec les réplicas)<br><br>
+__Il y a plusieurs options pour déployer son code dans Azure Container Apps :__<br>
+
+- Depuis une image de conteneur (portail ou Command line)
+- Code local
+- Repo GitHUb
+- Depuis un IDE (Visual Studio, Visual Studio Code, ...)
+- Depuis un fichier artefact (fichier JAR),c'est en preview <br>
+
 Exemple de code 'Az CLI' pour le déploiement d'une application depuis une image publique<br>
 Ce code déploie :<br>
 
@@ -296,7 +304,7 @@ az containerapp create \
    --query properties.configuration.ingress.fqdn
 ```
 
-On a également la possibilité de déployer une appication en s'appuyant sur un fichier YAML <br>
+On a également la possibilité de déployer une application en s'appuyant sur un fichier YAML <br>
 https://learn.microsoft.com/en-us/azure/container-instances/container-instances-reference-yaml <br>
 L'équivalent de la commande ci-dessus<br>
 
@@ -345,5 +353,11 @@ az containerapp create \
    --resource-group $RESOURCE_GROUP_NAME \
    --yaml ./config.yaml
 ```
-
-
+Pour nous aider à construire des fichiers YAML de configurations, on peut se servir de cette commande, elle permet d'exporter une configuration dans un fichier<br>
+```
+az containerapp show \
+  --name $CONTAINERAPP_NAME \
+  --resource-group $RESOURCE_GROUP_NAME \
+  --output yaml > app.yaml
+```
+Pour nos amis développeurs on peut également déployer des applications avec la command ``containerapp up`` 
