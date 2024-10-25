@@ -256,8 +256,10 @@ __Il y a plusieurs options pour déployer son code dans Azure Container Apps :__
 - Depuis une image de conteneur (portail ou Command line)
 - Code local
 - Repo GitHUb
-- Depuis un IDE (Visual Studio, Visual Studio Code, ...)
-- Depuis un fichier artefact (fichier JAR),c'est en preview <br>
+- Depuis un IDE (Visual Studio, Visual Studio Code, extension Azure Account, Azure Container Apps, Docker ...)
+- Depuis un fichier artefact (fichier JAR/Maven),c'est en preview <br><br>
+
+S'il y on choisi de déployer l'option  Il y a la posibilité de déployer une application 
 
 Exemple de code 'Az CLI' pour le déploiement d'une application depuis une image publique<br>
 Ce code déploie :<br>
@@ -360,4 +362,4 @@ az containerapp show \
   --resource-group $RESOURCE_GROUP_NAME \
   --output yaml > app.yaml
 ```
-Pour nos amis développeurs on peut également déployer des applications avec la command ``containerapp up`` 
+
