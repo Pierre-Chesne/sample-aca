@@ -411,7 +411,7 @@ Pour les "Workload profiles", par défault l'environnement est paramétré sur u
 <img width='800' src='./Images/deploi-5.png'/><br>
 Deux possibilités pour le "Monitoring"<br>
 Par défaut les logs sont envoyés dans Log Analytics workspace de votre choix ou possibilité d'en créer un.<br>
-S'il on souhaite envoyer les logs vers : - un compte de stockage - un event Hubs - des solutions tiers (Datadog;Elastic; Logs.io; .... - Log Analytics workspace)<br><br><br>
+S'il on souhaite envoyer les logs vers : - un compte de stockage - un event Hubs - des solutions tiers (Datadog; Elastic; Logs.io; .... - Log Analytics workspace)<br><br><br>
 <img width='800' src='./Images/deploi-6.png'/><br>
 <img width='800' src='./Images/deploi-7.png'/><br>
 <img width='800' src='./Images/deploi-8.png'/><br>
