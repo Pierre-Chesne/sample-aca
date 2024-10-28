@@ -403,6 +403,7 @@ Classique: Abonnement; Resource Group; nom de l'application<br>
 Dans cette exemple nous avons une image dans notre propre "Azure Container Registry"<br>
 Remarque, si nous n'avons pas d'image de conteneur, deux choix : - code dans un repo Github (image générée dans un Workflow Github Action avec Builpacks) - Local artefact (preview) uniquement .jar & .war<br><br><br>
 <img width='800' src='./Images/deploi-2.png'/><br>
+A ce niveau nous allons créer un environnement<br><br><br>
 <img width='800' src='./Images/deploi-3.png'/><br>
 <img width='800' src='./Images/deploi-4.png'/><br>
 <img width='800' src='./Images/deploi-5.png'/><br>
