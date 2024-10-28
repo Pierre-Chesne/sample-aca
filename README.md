@@ -388,4 +388,14 @@ az containerapp show \
   --resource-group $RESOURCE_GROUP_NAME \
   --output yaml > app.yaml
 ```
+<br><br>
+Et pour finir avec le portail <br>
+Deux étapes:<br>
 
+- Création de l'environnement
+- Création de la "Container App"
+
+
+<img width='800' src='./Images/deploi-0.png'/><br>
+<img width='800' src='./Images/deploi-1.png'/><br>
+<img width='800' src='./Images/deploi-2.png'/><br>
