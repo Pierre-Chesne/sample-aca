@@ -397,6 +397,7 @@ Deux étapes:<br>
 
 
 <img width='800' src='./Images/deploi-0.png'/><br>
+Dans le marketplace d'Azure on cherche Contener App <br><br>
 <img width='800' src='./Images/deploi-1.png'/><br>
 <img width='800' src='./Images/deploi-2.png'/><br>
 <img width='800' src='./Images/deploi-3.png'/><br>
