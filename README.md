@@ -261,7 +261,30 @@ __Il y a plusieurs options pour déployer son code dans Azure Container Apps :__
 - Depuis un IDE (Visual Studio, Visual Studio Code, extension Azure Account, Azure Container Apps, Docker ...)
 - Depuis un fichier artefact (fichier JAR/Maven),c'est en preview <br><br>
 
-S'il on choisi de déployer en mode "Code Local" & "Repo GitHub", il y a la posibilité de déployer une application sans faire un Dockerfile en passant par la commande ```az containerapp up```.<br>
+S'il on choisi de déployer en mode "Code Local" & "Repo GitHub", il y a la posibilité de déployer une application sans faire un fichier Dockerfile en passant par la commande ```az containerapp up``` (supporte uniquement les langages .NET; Node.js; PHP; Python ). L'image est générée par l'outils "Buildpacks" (https://www.cncf.io/projects/buildpacks/)<br>
+Voici un exemple de code (proposé dans la doc Microsoft) ```az containerapp up``` avec le code (node.js) en local<br>
+https://learn.microsoft.com/en-us/azure/container-apps/containerapp-up<br>
+
+
+```
+az containerapp up \
+   --name $API_NAME \
+   --location $LOCATION \
+   --environment $ENVIRONMENT \
+   --ingress external \
+   --target-port 8080 \
+   --source .
+```
+
+Ce code déploie:<br>
+- Un "Resource Group"
+- Un "Log Analytics workspace"
+- Un "Container Apps Environment"
+- Un "Container App"
+- une resouce "microsoft.app/builders" (image faite avec Buildpacks). Cette est une ressource cachée !
+<img width='800' src='./Images/buildpack.png'/><br>
+
+
 
 Exemple de code 'Az CLI' pour le déploiement d'une application depuis une image publique avec la commande ```az containerapp create```<br>
 Ce code déploie :<br>
