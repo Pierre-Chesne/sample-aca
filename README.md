@@ -407,7 +407,7 @@ A ce niveau nous allons créer un Container Apps environnement<br><br><br>
 <img width='800' src='./Images/deploi-3.png'/><br>
 Le nom de la ressource et s'il on souhaite de la redondance de zone (uniquement dans un environnement de vNet)<br><br><br>
 <img width='800' src='./Images/deploi-4.png'/><br>
-Pour les "Workload profiles", par défault l'environnement est paramétré sur un plan de "Consumption". S'il on souhaite partir sur un plan "Dedicated" il faudra enregistrer un "Workload profile name" avec "Workload profile size" (en choisissant des profils size de VM Séries D & E)<br><br><br>
+Pour les "Workload profiles", par défault l'environnement est paramétré sur un plan de "Consumption". S'il on souhaite partir sur un plan "Dedicated" il faudra enregistrer un "Workload profile name" avec "Workload profile size" (en choisissant des profils size de VM Séries D & E) et pour finir "Autoscaling instance count range" (de 0 à 50)<br><br><br>
 <img width='800' src='./Images/deploi-5.png'/><br>
 <img width='800' src='./Images/deploi-6.png'/><br>
 <img width='800' src='./Images/deploi-7.png'/><br>
