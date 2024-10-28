@@ -399,3 +399,14 @@ Deux étapes:<br>
 <img width='800' src='./Images/deploi-0.png'/><br>
 <img width='800' src='./Images/deploi-1.png'/><br>
 <img width='800' src='./Images/deploi-2.png'/><br>
+<img width='800' src='./Images/deploi-3.png'/><br>
+<img width='800' src='./Images/deploi-4.png'/><br>
+<img width='800' src='./Images/deploi-5.png'/><br>
+<img width='800' src='./Images/deploi-6.png'/><br>
+<img width='800' src='./Images/deploi-7.png'/><br>
+<img width='800' src='./Images/deploi-8.png'/><br>
+<img width='800' src='./Images/deploi-9.png'/><br>
+<img width='800' src='./Images/deploi-10.png'/><br>
+<img width='800' src='./Images/deploi-11.png'/><br>
+<img width='800' src='./Images/deploi-12.png'/><br>
+<img width='800' src='./Images/deploi-13.png'/><br>
