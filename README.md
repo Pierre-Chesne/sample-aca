@@ -238,6 +238,8 @@ N'est visible dans la console que : <br>
 - vNet/Subnet
 - Container Apps Environment<br>
 
+Dans cette configuration les conteneurs seront accessible depuis les subnets (subnet-main & subnet-pe) ou les conteneurs qui sont dans le même environnement<br>
+
 Les deux "node pools" ne sont pas visible ! (on ne gère pas :-)<br><br>
 
 __3/ Container__<br>
@@ -259,9 +261,9 @@ __Il y a plusieurs options pour déployer son code dans Azure Container Apps :__
 - Depuis un IDE (Visual Studio, Visual Studio Code, extension Azure Account, Azure Container Apps, Docker ...)
 - Depuis un fichier artefact (fichier JAR/Maven),c'est en preview <br><br>
 
-S'il y on choisi de déployer l'option  Il y a la posibilité de déployer une application 
+S'il on choisi de déployer en mode "Code Local" & "Repo GitHub", il y a la posibilité de déployer une application sans faire un Dockerfile en passant par la commande ```az containerapp up```.<br>
 
-Exemple de code 'Az CLI' pour le déploiement d'une application depuis une image publique<br>
+Exemple de code 'Az CLI' pour le déploiement d'une application depuis une image publique avec la commande ```az containerapp create```<br>
 Ce code déploie :<br>
 
 - Un "resource group"
