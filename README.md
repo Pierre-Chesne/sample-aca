@@ -238,7 +238,7 @@ N'est visible dans la console que : <br>
 - vNet/Subnet
 - Container Apps Environment<br>
 
-Dans cette configuration les conteneurs seront accessible depuis les subnets (subnet-main & subnet-pe) ou les conteneurs qui sont dans le même environnement<br>
+Dans cette configuration les conteneurs seront accessibles depuis les subnets (subnet-main & subnet-pe) ou les conteneurs qui sont dans le même environnement<br>
 
 Les deux "node pools" ne sont pas visible ! (on ne gère pas :-)<br><br>
 
