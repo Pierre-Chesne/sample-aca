@@ -419,7 +419,7 @@ Choissir un VNet existant si vous avez besoin de plus de fonctionnalités de mis
 
 - Intégration avec Application Gateway
 - Groupes de sécurité réseau
-- Communication avec des ressources derrière des points d'extrémité privés dans votre réseau virtuel
+- Communication avec des ressources derrière des points d'extrémité privés dans votre réseau virtuel<br><br><br>
 
 <img width='800' src='./Images/deploi-7.png'/><br>
 Choix de la "Virtual IP" (Internal ou External)<br>
