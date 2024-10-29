@@ -446,3 +446,9 @@ Dans les "Advanced settings" possibilité: <br>
 - D'ajouter des varibles d'environnement (cle/valeur), par exemple connexion base de données<br><br><br>
 <img width='800' src='./Images/deploi-12.png'/><br>
 <img width='800' src='./Images/deploi-13.png'/><br>
+Dans cet exemple, nous sommes dans un context ou nous n'avons pas de vNet dédier à notre environnemnt, en activant l'ingress (flux entrant) et en activant "Accepting traffic from anywhere". Notre "App Container" ne sera uniquement accessible en HTTP (TCP n'est disponible que dans les environnements Container Apps configurés avec un VNet personnalisé)<br>
+Pour le transport de base on laisse sur "Auto" (détection HTTP/1 ou HTTP/2)<br>
+Pour "Insecure connections", de base l'ingress accepte les requêtes HTTP sur le port 80 et sont automatiquement redirigées vers HTTPS sur le port 443. S'il on autorise les connexions non sécurisées, les requêtes HTTP vers le port 80 ne seront pas automatiquement redirigées vers le port 443 en utilisant HTTPS !<br>
+Pour le "Target port", il s'agit du port sur lequel le conteneur écoute et reçoit du trafic<br>
+Pour la "Session affinity",les requêtes HTTP d'un même client sont acheminées vers la même "replica" (c'est géré par des "cookies HTTP")<br>
+Possibilité d'exposer des ports TCP supplémentaires pour permettre aux applications d'accepter des connexions TCP sur plusieurs ports<br><br><br>
