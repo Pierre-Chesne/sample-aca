@@ -429,7 +429,7 @@ Comme dans le service AKS, si vous souhaitez avoir autre chose que nom "ME_nomde
 Pour le choix "internal" sera déployé et visible uniquement un "load balancer"<br>
 Pour le choix "external" sera déployé et visible uniquement une "Public IP address" et un "Load balancer"<br><br><br>
 <img width='800' src='./Images/deploi-8.png'/><br>
-Une fois que le "Container Apps Environment" est paramétré, l'assitant passe au "Container App"<br>
+Une fois que le "Container Apps Environment" est paramétré, l'assitant passe au "Container App"<br><br><br>
 
 
 <img width='800' src='./Images/deploi-9.png'/><br>
