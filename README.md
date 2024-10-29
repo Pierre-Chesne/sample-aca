@@ -455,4 +455,18 @@ Et enfin, possibilité d'exposer des ports TCP supplémentaires pour permettre a
 <img width='800' src='./Images/deploi-14.png'/><br>
 <img width='800' src='./Images/deploi-15.png'/><br>
 <img width='800' src='./Images/deploi-16.png'/><br>
+
 # Déploiement
+Comme on a pu le voir ci-dessus, il y a plussieurs méthodes déploiement :<br>
+
+- Portail
+- IDE avec les bonnes extensions (Visual Studio / Visual Studio Code)
+- Code en local ou dans un "Repository" (GitHub)
+- En "Command line"
+  - Azure CLI
+  - Azure PowerShell
+  - Azure Developer CLI
+- Infrastrucure As Code
+  - Template ARM / Bicep
+  - Terraform
+
