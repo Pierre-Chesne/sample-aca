@@ -413,7 +413,14 @@ Deux possibilités pour le "Monitoring"<br>
 Par défaut les logs sont envoyés dans Log Analytics workspace de votre choix ou possibilité d'en créer un.<br>
 S'il on souhaite envoyer les logs vers : - un compte de stockage - un event Hubs - des solutions tiers (Datadog; Elastic; Logs.io; .... - Log Analytics workspace)<br><br><br>
 <img width='800' src='./Images/deploi-6.png'/><br>
-Ici, le choix réseau pour l'environnement 
+Les Azure Container Apps s'exécutent dans le contexte d'un environnement, avec son propre réseau virtuel (VNet).<br>
+Par défaut, votre environnement Container App est créé avec un VNet qui est automatiquement généré pour vous. Pour un contrôle plus fin de votre réseau, vous pouvez fournir un VNet existant lorsque vous créez un environnement. Une fois que vous avez créé un environnement avec un VNet généré ou existant, le type de réseau ne peut plus être modifié.<br>
+Choissir un VNet existant si vous avez besoin de plus de fonctionnalités de mise en réseau Azure, telles que :<br>
+
+- Intégration avec Application Gateway
+- Groupes de sécurité réseau
+- Communication avec des ressources derrière des points d'extrémité privés dans votre réseau virtuel
+
 <img width='800' src='./Images/deploi-7.png'/><br>
 <img width='800' src='./Images/deploi-8.png'/><br>
 <img width='800' src='./Images/deploi-9.png'/><br>
