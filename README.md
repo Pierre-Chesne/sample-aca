@@ -452,3 +452,5 @@ Pour "Insecure connections", de base l'ingress accepte les requêtes HTTP sur le
 Pour le "Target port", il s'agit du port sur lequel le conteneur écoute et reçoit du trafic<br>
 Pour la "Session affinity",les requêtes HTTP d'un même client sont acheminées vers la même "replica" (c'est géré par des "cookies HTTP")<br>
 Et enfin, possibilité d'exposer des ports TCP supplémentaires pour permettre aux applications d'accepter des connexions TCP sur plusieurs ports<br><br><br>
+<img width='800' src='./Images/deploi-14.png'/><br>
+<img width='800' src='./Images/deploi-15.png'/><br>
