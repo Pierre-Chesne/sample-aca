@@ -436,6 +436,7 @@ Pour pouvoir lister la "Azure Container Registry", "l' admin credentials" doit �
 Il y a la possibilité d'aller chercher des images dans des "public registry" (ex:Docker Hub) ou dans une "private registry" (Registry login server/Registry user name/Registry password)<br>
 <br><br><br>
 <img width='800' src='./Images/deploi-10.png'/><br>
+<img width='800' src='./Images/deploi-11.png'/><br>
 Dans les "Advanced settings" possibilité: <br>
 
 - de faire de l "override ENTRYPOINT" de l'image
@@ -443,6 +444,5 @@ Dans les "Advanced settings" possibilité: <br>
 - de rajouter des fonctionnalités supplémentaires en fonction du language applicatif (Java/.NET/Generic). Par exemple, pour JAVA, on pourra récupérer les "Java Virtual Machine (JVM) metrics"
 - de récupérer les "Workload Profils" (dedicated plan / Consumption plan) et paramétrer les CPU/Mémoire des "Consumption plan"
 - D'ajouter des varibles d'environnement (cle/valeur), par exemple connexion base de données<br><br><br>
-<img width='800' src='./Images/deploi-11.png'/><br>
 <img width='800' src='./Images/deploi-12.png'/><br>
 <img width='800' src='./Images/deploi-13.png'/><br>
