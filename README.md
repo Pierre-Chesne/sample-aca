@@ -432,7 +432,7 @@ Pour le choix "external" sera déployé et visible uniquement une "Public IP add
 Une fois que le "Container Apps Environment" est paramétré, l'assitant passe au "Container App"<br><br><br>
 <img width='800' src='./Images/deploi-9.png'/><br>
 Dans cet exemple nous avons une image dans notre propre "Azure Container Registry"<br>
-Il y a la possibilité d'aller chercher des images dans des "public registry" (ex:Docker Hub) ou dans une "private registry" (Registry login server/Registry user name/Registry password)
+Il y a la possibilité d'aller chercher des images dans des "public registry" (ex:Docker Hub) ou dans une "private registry" (Registry login server/Registry user name/Registry password)<br><br><br>
 <img width='800' src='./Images/deploi-10.png'/><br>
 <img width='800' src='./Images/deploi-11.png'/><br>
 <img width='800' src='./Images/deploi-12.png'/><br>
