@@ -457,7 +457,7 @@ Et enfin, possibilité d'exposer des ports TCP supplémentaires pour permettre a
 <img width='800' src='./Images/deploi-16.png'/><br>
 
 # Déploiement
-Comme on a pu le voir ci-dessus, il y a plussieurs méthodes déploiement :<br>
+Comme on a pu le voir ci-dessus, il y a plusieurs méthodes déploiement :<br>
 
 - Portail
 - IDE avec les bonnes extensions (Visual Studio / Visual Studio Code)
