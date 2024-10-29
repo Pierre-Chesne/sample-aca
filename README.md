@@ -400,7 +400,7 @@ Deux étapes:<br>
 Dans le marketplace d'Azure on cherche Contener App <br><br><br>
 <img width='800' src='./Images/deploi-1.png'/><br>
 Classique: Abonnement; Resource Group; nom de l'application<br>
-Dans cette exemple nous avons une image dans notre propre "Azure Container Registry"<br>
+Dans cet exemple nous avons une image dans notre propre "Azure Container Registry"<br>
 Remarque, si nous n'avons pas d'image de conteneur, deux choix : - code dans un repo Github (image générée dans un Workflow Github Action avec Builpacks) - Local artefact (preview) uniquement .jar & .war<br><br><br>
 <img width='800' src='./Images/deploi-2.png'/><br>
 A ce niveau nous allons créer un Container Apps environnement<br><br><br>
@@ -430,9 +430,9 @@ Pour le choix "internal" sera déployé et visible uniquement un "load balancer"
 Pour le choix "external" sera déployé et visible uniquement une "Public IP address" et un "Load balancer"<br><br><br>
 <img width='800' src='./Images/deploi-8.png'/><br>
 Une fois que le "Container Apps Environment" est paramétré, l'assitant passe au "Container App"<br><br><br>
-
-
 <img width='800' src='./Images/deploi-9.png'/><br>
+Dans cet exemple nous avons une image dans notre propre "Azure Container Registry"<br>
+Il y a la possibilité d'aller chercher des images dans des "public registry" (ex:Docker Hub) ou dans une "private registry" (Registry login server/Registry user name/Registry password)
 <img width='800' src='./Images/deploi-10.png'/><br>
 <img width='800' src='./Images/deploi-11.png'/><br>
 <img width='800' src='./Images/deploi-12.png'/><br>
