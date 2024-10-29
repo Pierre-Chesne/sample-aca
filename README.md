@@ -442,9 +442,7 @@ Dans les "Advanced settings" possibilité: <br>
 - de de faire de l "override CMD" de l'image
 - de rajouter des fonctionnalités supplémentaires en fonction du language applicatif (Java/.NET/Generic). Par exemple, pour JAVA, on pourra récupérer les "Java Virtual Machine (JVM) metrics"
 - de récupérer les "Workload Profils" (dedicated plan / Consumption plan) et paramétrer les CPU/Mémoire des "Consumption plan"
-- D'ajouter des varibles d'environnement (cle/valeur), par exemple connexion base de données
-
-
+- D'ajouter des varibles d'environnement (cle/valeur), par exemple connexion base de données<br><br><br>
 <img width='800' src='./Images/deploi-11.png'/><br>
 <img width='800' src='./Images/deploi-12.png'/><br>
 <img width='800' src='./Images/deploi-13.png'/><br>
