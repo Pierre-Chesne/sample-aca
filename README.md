@@ -425,7 +425,7 @@ Choissir un VNet existant si vous avez besoin de plus de fonctionnalités de mis
 Choix de la "Virtual IP" (Internal ou External)<br>
 Attention !! Il y a la possibilité de créer un vNet lors de cet assitant mais on est bloqué sur un block d'adressage de 10.0.0.0/16<br>
 Petit conseil ... Créer le vNet/Subnet avant ! voir ici les prérequis réseau https://learn.microsoft.com/en-us/azure/container-apps/networking?tabs=consumption-only-env%2Cazure-cli<br>
-Comme dans le service AKS, si vous souhaitez avoir autre chose que nom "ME_nomdeenvironnement_nomduresourcegroup_region"  pour le "resource group" des resources , il y a maintenant possibilité de donner un nom à ce "resource group".<br>
+Comme dans le service AKS, si vous souhaitez avoir autre chose que nom "ME_nomdeenvironnement_nomduresourcegroup_region"  pour le "resource group" des resources , il y a maintenant possibilité de donner un nom à ce dernier.<br>
 Pour le choix "internal" sera déployé et visible uniquement un "load balancer"<br>
 Pour le choix "external" sera déployé et visible uniquement une "Public IP address" et un "Load balancer"<br><br><br>
 <img width='800' src='./Images/deploi-8.png'/><br>
@@ -434,9 +434,17 @@ Une fois que le "Container Apps Environment" est paramétré, l'assitant passe a
 Dans cet exemple nous avons une image dans notre propre "Azure Container Registry".<br>
 Pour pouvoir lister la "Azure Container Registry", "l' admin credentials" doit être activé  dans les "settings" de cette dernière.<br>
 Il y a la possibilité d'aller chercher des images dans des "public registry" (ex:Docker Hub) ou dans une "private registry" (Registry login server/Registry user name/Registry password)<br>
-
 <br><br><br>
 <img width='800' src='./Images/deploi-10.png'/><br>
+Dans les "Advanced settings" possibilité: <br>
+
+- de faire de l "override ENTRYPOINT" de l'image
+- de de faire de l "override CMD" de l'image
+- de rajouter des fonctionnalités supplémentaires en fonction du language applicatif (Java/.NET/Generic). Par exemple, pour JAVA, on pourra récupérer les "Java Virtual Machine (JVM) metrics"
+- de récupérer les "Workload Profils" (dedicated plan / Consumption plan) et paramétrer les CPU/Mémoire des "Consumption plan"
+- D'ajouter des varibles d'environnement (cle/valeur), par exemple connexion base de données
+
+
 <img width='800' src='./Images/deploi-11.png'/><br>
 <img width='800' src='./Images/deploi-12.png'/><br>
 <img width='800' src='./Images/deploi-13.png'/><br>
