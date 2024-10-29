@@ -425,9 +425,9 @@ Choissir un VNet existant si vous avez besoin de plus de fonctionnalités de mis
 Choix de la "Virtual IP" (Internal ou External)<br>
 Attention !! Il y a la possibilité de créer un vNet lors de cet assitant mais on est bloqué sur un block d'adressage de 10.0.0.0/16<br>
 Petit conseil ... Créer le vNet/Subnet avant ! voir ici les prérequis réseau https://learn.microsoft.com/en-us/azure/container-apps/networking?tabs=consumption-only-env%2Cazure-cli<br>
-Comme dans le service AKS, si vous souhaitez avoir autre chose que nom "ME_nomdeenvironnement_nomduresourcegroup_region"  pour le "resource group" des resources , il y a maintenant possibilité de donner un nom au "resource group".<br>
-Pour le choix "internal" sera visible uniquement un "load balancer"<br>
-Pour le choix "external" sera visible uniquement une "Public IP address" et un "Load balancer"<br><br><br>
+Comme dans le service AKS, si vous souhaitez avoir autre chose que nom "ME_nomdeenvironnement_nomduresourcegroup_region"  pour le "resource group" des resources , il y a maintenant possibilité de donner un nom à ce "resource group".<br>
+Pour le choix "internal" sera déployé et visible uniquement un "load balancer"<br>
+Pour le choix "external" sera déployé et visible uniquement une "Public IP address" et un "Load balancer"<br><br><br>
 <img width='800' src='./Images/deploi-8.png'/><br>
 <img width='800' src='./Images/deploi-9.png'/><br>
 <img width='800' src='./Images/deploi-10.png'/><br>
