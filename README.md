@@ -455,3 +455,4 @@ Et enfin, possibilité d'exposer des ports TCP supplémentaires pour permettre a
 <img width='800' src='./Images/deploi-14.png'/><br>
 <img width='800' src='./Images/deploi-15.png'/><br>
 <img width='800' src='./Images/deploi-16.png'/><br>
+# Déploiement
