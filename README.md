@@ -454,3 +454,4 @@ Pour la "Session affinity",les requêtes HTTP d'un même client sont acheminées
 Et enfin, possibilité d'exposer des ports TCP supplémentaires pour permettre aux applications d'accepter des connexions TCP sur plusieurs ports<br><br><br>
 <img width='800' src='./Images/deploi-14.png'/><br>
 <img width='800' src='./Images/deploi-15.png'/><br>
+<img width='800' src='./Images/deploi-16.png'/><br>
