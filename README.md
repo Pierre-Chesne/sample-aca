@@ -451,4 +451,4 @@ Pour le transport de base on laisse sur "Auto" (détection HTTP/1 ou HTTP/2)<br>
 Pour "Insecure connections", de base l'ingress accepte les requêtes HTTP sur le port 80 et sont automatiquement redirigées vers HTTPS sur le port 443. S'il on autorise les connexions non sécurisées, les requêtes HTTP vers le port 80 ne seront pas automatiquement redirigées vers le port 443 en utilisant HTTPS !<br>
 Pour le "Target port", il s'agit du port sur lequel le conteneur écoute et reçoit du trafic<br>
 Pour la "Session affinity",les requêtes HTTP d'un même client sont acheminées vers la même "replica" (c'est géré par des "cookies HTTP")<br>
-Possibilité d'exposer des ports TCP supplémentaires pour permettre aux applications d'accepter des connexions TCP sur plusieurs ports<br><br><br>
+Et enfin, possibilité d'exposer des ports TCP supplémentaires pour permettre aux applications d'accepter des connexions TCP sur plusieurs ports<br><br><br>
