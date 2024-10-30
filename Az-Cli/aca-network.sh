@@ -351,7 +351,7 @@ az vm create \
     --name "vm-aca" \
     --image "MicrosoftWindowsServer:WindowsServer:2022-datacenter-azure-edition:latest" \
     --public-ip-sku Standard \
-    --admin-username "pierrc" \
+    --admin-username "user" \
     --admin-password "Password123$" \
     --public-ip-sku Standard \
     --vnet-name $VNET_NAME \

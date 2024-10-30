@@ -479,8 +479,32 @@ az provider register --namespace Microsoft.App
 az provider register --namespace Microsoft.OperationalInsights
 ```
 <br>
-En Bonus un script Az-CLI ./Az-Cli/aca-network-v2.sh
+En Bonus un script Az-CLI ./Az-Cli/aca-network-v2.sh<br>
 <img width='800' src='./Images/deploi-17.png'/><br>
+
+Pour tester et découvrir le script déploie: <br>
+- un "resource group"
+- un réseau 
+  - vNet
+  - trois subnet dont un en "delegated Microsoft.App/environments" pour le "Container Apps Environment"
+- PosgreSQL
+  - serveur postgres flexible-server
+  - une base
+  - deux tables
+  - Private endpoint (subnet pe)
+  - Private-dns zone avec les enregistrements
+- Azure Container Apps Environment
+  - Log Analytic workspace
+  - Environmment dans le subnet
+  - Private-dns zone avec les enregistrements
+- Azure Container Registry
+  - Container registry
+  - Build & push d'une image (./Src)
+  - Managed Identity
+  - Assign Identity -> Container registry
+  - Assign Role AcrPull
+- Azure Container App
+  - Secrets / variables (connexion base de données)
 
 
 # Conclusion
