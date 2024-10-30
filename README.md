@@ -479,10 +479,7 @@ az provider register --namespace Microsoft.App
 az provider register --namespace Microsoft.OperationalInsights
 ```
 <br>
-En Bonus un script Az-CLI ./Az-Cli/aca-network-v2.sh<br><br>
-<img width='800' src='./Images/deploi-17.png'/><br>
-
-Pour tester et découvrir le script déploie: <br>
+En bonus, pour tester et découvrir le script déploie: <br>
 - un "resource group"
 - un réseau 
   - vNet
@@ -505,6 +502,11 @@ Pour tester et découvrir le script déploie: <br>
   - Assign Role AcrPull
 - Azure Container App
   - Secrets / variables (connexion base de données)
+
+
+<img width='800' src='./Images/deploi-17.png'/><br>
+
+
 
 
 # Conclusion
