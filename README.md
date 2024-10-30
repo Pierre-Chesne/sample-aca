@@ -480,6 +480,7 @@ az provider register --namespace Microsoft.OperationalInsights
 ```
 <br>
 En bonus, pour tester et découvrir le script déploie: <br>
+
 - un "resource group"
 - un réseau 
   - vNet
