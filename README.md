@@ -504,9 +504,13 @@ En bonus, pour tester et découvrir le script déploie: <br>
 - Azure Container App
   - Secrets / variables (connexion base de données)
 
-<img width='800' src='./Images/deploi-17.png'/><br>
+<img width='800' src='./Images/deploi-17.png'/><br><br>
+Testons la plateforme:<br>
+Pour tester l'application <br>
 
-
+- Dans la console Azure, il faut aller dans la "Container App", dans la barre de gauche
+  - Monitoring -> Log Stream
+<img width='800' src='./Images/deploi-17.png'/><br><br>
 
 
 # Conclusion
