@@ -479,7 +479,7 @@ az provider register --namespace Microsoft.App
 az provider register --namespace Microsoft.OperationalInsights
 ```
 <br>
-En Bonus un script Az-CLI ./Az-Cli/aca-network-v2.sh<br>
+En Bonus un script Az-CLI ./Az-Cli/aca-network-v2.sh<br><br>
 <img width='800' src='./Images/deploi-17.png'/><br>
 
 Pour tester et découvrir le script déploie: <br>
