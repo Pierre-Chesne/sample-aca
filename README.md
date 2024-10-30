@@ -3,7 +3,7 @@
 # Introduction
 
 Azure Container Apps est un service d’Azure qui a été officiellement annoncé lors de l'événement __Microsoft Ignite 2021__ et est devenu GA en mai 2022.<br><br>
-__Azure Container Apps__ est un service de plateforme d'applications « Serverless » qui permet de déployer et d'exécuter des applications conteneurisées de manière simplifiée, __sans gérer l'infrastructure sous-jacente__ qui n’es ni plus ni moins que les services Azure Kubernetes Services (pas besoin d’être un expert en orchestrateur de containeurs).<br><br>
+__Azure Container Apps__ est un service de plateforme d'applications « Serverless » qui permet de déployer et d'exécuter des applications conteneurisées de manière simplifiée, __sans gérer l'infrastructure sous-jacente__ qui n’est ni plus ni moins que les services Azure Kubernetes Services (pas besoin d’être un expert en orchestrateur de containeurs).<br><br>
 Microsoft propose ce service pour les scenarios suivant :
 * Applications web et API
 * Traitement de tâches en arrière-plan
@@ -467,11 +467,20 @@ Comme on a pu le voir ci-dessus, il y a plusieurs méthodes de déploiement :<br
   - Azure PowerShell
   - Azure Developer CLI (AZD https://learn.microsoft.com/fr-fr/azure/developer/azure-developer-cli/)
 - Infrastrucure As Code
-  - Template ARM / Bicep (ex: Hello-World Bicep ici)
-  - Terraform (ex: Hello-World Terraform ici)
+  - Template ARM / Bicep (ex: Hello-World ./Bicep)
+  - Terraform (ex: Hello-World Terraform ./Terraform)
+
+Pour déployer des infrastructures Azure Container Apps en AZ CLI, votre CLI doit être à jour<br>
+Pour la mettre à jour et installer les extensions (Microsoft.App & Microsoft.OperationalInsights) :
+```
+az upgrade
+az extension add --name containerapp --upgrade
+az provider register --namespace Microsoft.App
+az provider register --namespace Microsoft.OperationalInsights
+```
+<br>
+En Bonus un script Az-CLI ./Az-Cli/aca-network-v2.sh
+<img width='800' src='./Images/deploi-17.png'/><br>
 
 
 # Conclusion
-
-https://www.odwebp.svc.ms/Lab_1/README.md
-<a href=https://github.com/Pierre-Chesne/sample-aca/tree/main/Bicep>ici</a>

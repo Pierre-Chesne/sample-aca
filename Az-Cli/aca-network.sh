@@ -39,7 +39,6 @@ IMAGE_NAME_VERSION="1.0.0"
 
 IDENTITY="aca-mi"
 
-
 ###################################################
 #                                                 #
 #           Resource Group                        #
@@ -48,10 +47,7 @@ IDENTITY="aca-mi"
 echo "Creating the resource group..."
 az group create \
     --name $RESOURCE_GROUP_NAME \
-    --location $LOCATION \
-    --tags "env=test"
-
-
+    --location $LOCATION
 
 ###################################################
 #                                                 #
@@ -88,7 +84,6 @@ az network vnet subnet create \
     --address-prefix $PREFIX_SUBNET_PE
 
 
-
 ###################################################
 #                                                 #
 #            PostgreSQL                           #
@@ -105,12 +100,12 @@ az postgres flexible-server create \
   --tier $POSTGRESQL_TIER \
   --version $POSTGRESQL_VERSION \
   --storage-size $POSTGRESQL_STORAGESIZE \
-  --public-access 'None'
+  --public-access 0.0.0.0-255.255.255.255
+
 az postgres flexible-server parameter set \
   --resource-group $RESOURCE_GROUP_NAME \
   --server-name $POSTGRESQL_SERVER_NAME \
   --name require_secure_transport --value off
-
 
 echo "Creating the PostgreSQL database..."
 az postgres flexible-server db create \
@@ -123,6 +118,15 @@ az postgres flexible-server execute \
   --name $POSTGRESQL_SERVER_NAME \
   --database-name $POSTGRESQL_DBNAME \
   --file-path create_tables.sql
+RULE=$(az postgres flexible-server firewall-rule list \
+       --name $POSTGRESQL_SERVER_NAME \
+       --resource-group $RESOURCE_GROUP_NAME \
+       --query "[].name" -o tsv)
+az postgres flexible-server firewall-rule delete \
+   --name $POSTGRESQL_SERVER_NAME \
+   --rule-name $RULE \
+   --resource-group $RESOURCE_GROUP_NAME \
+   --yes
 
 echo "Creating the private endpoint for PostgreSQL server..."
 az network private-endpoint create \
@@ -352,28 +356,3 @@ az vm create \
     --public-ip-sku Standard \
     --vnet-name $VNET_NAME \
     --subnet $SUBNET_MAIN_NAME
-
-
-###################################################
-#                                                 #
-#             Test sur la machine rebond          #
-#                                                 #
-###################################################
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
