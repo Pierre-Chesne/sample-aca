@@ -470,3 +470,6 @@ Comme on a pu le voir ci-dessus, il y a plusieurs méthodes déploiement :<br>
   - Template ARM / Bicep
   - Terraform
 
+
+
+# Conclusion
