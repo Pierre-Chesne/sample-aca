@@ -457,7 +457,7 @@ Et enfin, possibilité d'exposer des ports TCP supplémentaires pour permettre a
 <img width='800' src='./Images/deploi-16.png'/><br>
 
 # Déploiement
-Comme on a pu le voir ci-dessus, il y a plusieurs méthodes déploiement :<br>
+Comme on a pu le voir ci-dessus, il y a plusieurs méthodes de déploiement :<br>
 
 - Portail
 - IDE avec les bonnes extensions (Visual Studio / Visual Studio Code)
@@ -465,11 +465,13 @@ Comme on a pu le voir ci-dessus, il y a plusieurs méthodes déploiement :<br>
 - En "Command line"
   - Azure CLI
   - Azure PowerShell
-  - Azure Developer CLI
+  - Azure Developer CLI (AZD https://learn.microsoft.com/fr-fr/azure/developer/azure-developer-cli/)
 - Infrastrucure As Code
-  - Template ARM / Bicep
-  - Terraform
-
+  - Template ARM / Bicep (ex: Hello-World Bicep ici)
+  - Terraform (ex: Hello-World Terraform ici)
 
 
 # Conclusion
+
+https://www.odwebp.svc.ms/Lab_1/README.md
+<a href=https://github.com/Pierre-Chesne/sample-aca/tree/main/Bicep>ici</a>
