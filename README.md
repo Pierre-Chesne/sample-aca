@@ -504,7 +504,6 @@ En bonus, pour tester et découvrir le script déploie: <br>
 - Azure Container App
   - Secrets / variables (connexion base de données)
 
-
 <img width='800' src='./Images/deploi-17.png'/><br>
 
 
