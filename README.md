@@ -510,7 +510,7 @@ Pour tester l'application <br>
 
 - Dans la console Azure, il faut aller dans la "Container App", dans la barre de gauche
   - Monitoring -> Log Stream
-<img width='800' src='./Images/deploi-17.png'/><br><br>
+<img width='800' src='./Images/deploi-18.png'/><br><br>
 
 
 # Conclusion
