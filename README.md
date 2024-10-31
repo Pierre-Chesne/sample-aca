@@ -37,7 +37,7 @@ Il faut comprendre qu'un "Container Apps Environment" est l'environnement (AKS) 
 Quand on déploie un "Container Apps Environment", on paramètre : - La "zone reduncy"(uniquement s'il y a une intégration avec un vNet) - les Workload profiles (plans) - le monitoring pour les Logs (Azure Log Analytics / Azure Monitor / Pas de stockage de Logs). - Networking, s'il on souhaite utiliser l'intégration d'un Virtual Network, s'il on souhaite exposer la "Virtual IP" à l'extérieur ou pas. (Internal/External)<br>
 Selon vos besoins, on peut utiliser un ou plusieurs environnements Container Apps.<br>
 En résumer<br>
-On utilise __un environnement__ pour :<br>
+On utilise __qu'un environnement__ pour :<br>
 - Déployer différentes applications sur le même VNet
 - Instrumenter les applications Dapr qui communiquent via l'API d'invocation de services Dapr et partage la même configuration Dapr
 - Faire en sorte que les applications partagent la même destination de journal de logs<br>
