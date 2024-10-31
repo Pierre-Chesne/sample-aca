@@ -17,7 +17,7 @@ Les applications construites sur Azure Container Apps peuvent évoluer dynamique
 * CPU or memory load
 * Any KEDA-supported scaler
 
-Dans Azure Container Apps on dispose également d'une version managée des API Dapr. Les API Dapr disponibles incluent "Service to Service calls", "Pub/Sub", "Event Bindings", "State Stores"et "Actors".https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr
+Dans Azure Container Apps on dispose également d'une version managée des API Dapr. Les __API Dapr__ disponibles incluent "Service to Service calls", "Pub/Sub", "Event Bindings", "State Stores"et "Actors".https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr
 
 Ce service interressant évolue assez vite, Microsoft publie ici la Roadmap : https://github.com/orgs/microsoft/projects/540
 
@@ -528,4 +528,5 @@ Depuis la VM de rebond <br><br>
 
 # Conclusion
 Microsoft propose de nombreuses options permettant aux équipes de créer et de déployer des applications cloud natives et conteneurisées sur Azure, il n'existe pas de solution parfaite pour tous les cas d'utilisation et toutes les équipes.<br>
-Moi personnellement, je suis fan de "Azure Container Apps" !!!  
+Moi personnellement, je suis fan de "Azure Container Apps" !!! Si vous souhaitez créer des applications "cools & branchées" de type Kubernetes, que vous n'avez pas besoin d'un accès direct à toutes les API Kubernetes natives, à la gestion des clusters, Container Apps offre une expérience entièrement gérée basée sur les meilleures pratiques.<br>
+Pour ces raisons, de nombreuses équipes préfèrent commencer à construire des microservices de conteneurs avec Azure Container Apps.Azure Container Apps ne fournit pas d'accès direct aux API Kubernetes sous-jacentes.
