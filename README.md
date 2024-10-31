@@ -131,7 +131,7 @@ az containerapp env show \
   "type": "Microsoft.App/managedEnvironments"
 }
 ```
-On peut remarquer ci-dessus quelques informations interressantes: la "staticIp" (la "Virtual IP" ) - les workloadProfiles - le "defaultDomain" (blabla-aleatoire.region.azurecontainerapps.io). Chaque conteneurs dans l'environnement aura le nom nomduconteneur.labla-aleatoire.region.azurecontainerapps.io<br><br>
+On peut remarquer ci-dessus quelques informations interressantes: la "staticIp" (la "Virtual IP" ) - les workloadProfiles - le "defaultDomain" (blabla-aleatoire.region.azurecontainerapps.io) - ... Chaque conteneurs dans l'environnement aura le nom nomduconteneur.labla-aleatoire.region.azurecontainerapps.io<br><br>
 
 Exemple de code d'un déploiement "Container Apps Environment" dans un vNet existant et un accès uniquement interne :<br>
 - Création d'un "resource group"
