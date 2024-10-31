@@ -518,6 +518,12 @@ L'application est bien connecté à la base
 L'application fonctionne, on récupère les données et on peut incrementer (command curl)
 
   - Depuis la VM de rebond <br><br>
-Avant de se connecter sur la VM de rebond, il faut récupérer l' "Application Url"<br>
+
+Avant de se connecter sur la VM de rebond, il faut récupérer et copier l' "Application Url"<br>
 <img width='800' src='./Images/deploi-20.png'/><br><br>
+Depuis la VM de rebond <br><br>
+<img width='800' src='./Images/deploi-20.png'/><br><br>
+- On teste la résolution de nom<br>
+- On teste l'application ( remarque, l'application répond uniquement en https !)
+
 # Conclusion
