@@ -28,6 +28,7 @@ Plan « Dedicated »:<br>
 Le plan dédié consiste en une série de profils de charge de travail qui vont du profil de consommation par défaut à des profils qui disposent d'un matériel dédié personnalisé pour des besoins de calcul spécialisés.<br><br>
 Plan « Consumption »:<br>
 Le plan Consommation propose une architecture « serverless » qui permet à vos applications d'évoluer à la demande. Les applications peuvent évoluer jusqu'à zéro, et vous ne payez que pour les applications en cours d'exécution. Utilisez le plan de consommation lorsque vous n'avez pas d'exigences matérielles spécifiques pour votre application de conteneur.<br><br>
+Pour aller plus loin https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview
 __2/ Environnement__<br>
 Un environnement Container Apps est un périmètre sécurisé autour d'une ou plusieurs applications et tâches conteneurisées.<br>
 Un réseau virtuel prend en charge chaque environnement. Lorsque que l’on créer un environnement Azure Container Apps créée un Vnet ( qui n’est pas visible dans la console), on peut également venir également avec son propre Vnet/Subnet pour des configurations plus complexes ( bastion, Private End Point , ….)<br>
@@ -132,7 +133,7 @@ az containerapp env show \
 ```
 On peut remarquer ci-dessus quelques informations interressantes: la "staticIp" (la "Virtual IP" ) - le "defaultDomain" (blabla-aleatoire.region.azurecontainerapps.io). Chaque conteneurs dans l'environnement aura le nom nomduconteneur.labla-aleatoire.region.azurecontainerapps.io<br><br>
 
-Exemple de code d'un déploiement "Container Apps Environment" dans un vNet existant:<br>
+Exemple de code d'un déploiement "Container Apps Environment" dans un vNet existant et un accès uniquement interne :<br>
 - Création d'un "resource group"
 - Création d'un Vnet et trois Subnet (dont un avec un "Delegate to Microsoft.App/environments)
 - Création d'un "Log Analytics workspace"
