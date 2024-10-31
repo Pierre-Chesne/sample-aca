@@ -23,7 +23,7 @@ Ce service interressant évolue assez vite, Microsoft publie ici la Roadmap : ht
 
 # Quelques concepts
 __1/ Plans__<br>
-Azure Container Apps propose deux types de plans :<br><br>
+Azure Container Apps propose deux types de plans (Profile type) :<br><br>
 Plan « Dedicated »:<br>
 Le plan dédié consiste en une série de profils de charge de travail qui vont du profil de consommation par défaut à des profils qui disposent d'un matériel dédié personnalisé pour des besoins de calcul spécialisés.<br><br>
 Plan « Consumption »:<br>
