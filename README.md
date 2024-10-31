@@ -483,7 +483,7 @@ az provider register --namespace Microsoft.App
 az provider register --namespace Microsoft.OperationalInsights
 ```
 <br>
-En bonus, pour tester et découvrir le script déploie: <br>
+En bonus, pour tester et découvrir voici un script (```./Az-Cli/aca-network.sh```) qui déploie: <br>
 
 - un "resource group"
 - un réseau 
