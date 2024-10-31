@@ -527,6 +527,6 @@ Depuis la VM de rebond <br><br>
 - On teste l'application ( remarque, l'application répond uniquement en https !)
 
 # Conclusion
-Microsoft propose de nombreuses options permettant aux équipes de créer et de déployer des applications cloud natives et conteneurisées sur Azure, il n'existe pas de solution parfaite pour tous les cas d'utilisation et toutes les équipes.<br>
+Microsoft propose de nombreuses options permettant aux équipes de créer et de déployer des applications cloud natives et conteneurisées sur Azure. Il n'existe pas de solution parfaite pour tous les cas d'utilisation et toutes les équipes.<br>
 Moi personnellement, je suis fan de "Azure Container Apps" !!! Si vous souhaitez créer des applications "cools & branchées" de type Kubernetes, que vous n'avez pas besoin d'un accès direct à toutes les API Kubernetes natives, à la gestion des clusters, Container Apps offre une expérience entièrement gérée basée sur les meilleures pratiques.<br>
 Pour ces raisons, de nombreuses équipes préfèrent commencer à construire des microservices de conteneurs avec Azure Container Apps.Azure Container Apps ne fournit pas d'accès direct aux API Kubernetes sous-jacentes.
