@@ -412,7 +412,7 @@ Le nom de la ressource "Container Apps environnement"et s'il on souhaite de la r
 Pour les "Workload profiles", par défault l'environnement est paramétré sur un plan de "Consumption".<br> S'il on souhaite partir sur un plan "Dedicated" il faudra enregistrer un "Workload profile name" avec "Workload profile size" (en choisissant des profils size de VM Séries D & E) et pour finir "Autoscaling instance count range" (de 0 à 50)<br><br><br>
 <img width='800' src='./Images/deploi-5.png'/><br>
 Deux possibilités pour le "Monitoring"<br>
-Par défaut les logs sont envoyés dans Log Analytics workspace de votre choix ou possibilité d'en créer un.<br>
+Par défaut les logs sont envoyés dans "Log Analytics workspace" de votre choix ou possibilité d'en créer un.<br>
 S'il on souhaite envoyer les logs vers : - un compte de stockage - un event Hubs - des solutions tiers (Datadog; Elastic; Logs.io; .... - Log Analytics workspace)<br><br><br>
 <img width='800' src='./Images/deploi-6.png'/><br>
 Les Azure Container Apps s'exécutent dans le contexte d'un environnement, avec son propre réseau virtuel (VNet).<br>
