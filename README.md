@@ -519,7 +519,7 @@ L'application fonctionne, on récupère les données et on peut incrementer (com
 
   - Depuis la VM de rebond <br><br>
 
-Avant de se connecter sur la VM de rebond, il faut récupérer et copier l' "Application Url"<br>
+Avant de se connecter sur la VM de rebond, il faut récupérer et copier l' "Application Url"<br><br>
 <img width='800' src='./Images/deploi-20.png'/><br><br>
 Depuis la VM de rebond <br><br>
 <img width='800' src='./Images/deploi-20.png'/><br><br>
