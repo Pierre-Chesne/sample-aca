@@ -515,5 +515,9 @@ L'application est bien connecté à la base
 
   - Monitoring -> Console
 <img width='800' src='./Images/deploi-19.png'/><br><br>
-L'application fonction récupère les données et peut incrementer
+L'application fonctionne, on récupère les données et on peut incrementer (command curl)
+
+  - Depuis la VM de rebond
+Avant de se connecter sur la VM de rebond, il faut récupérer l' "Application Url"<br>
+<img width='800' src='./Images/deploi-20.png'/><br><br>
 # Conclusion
