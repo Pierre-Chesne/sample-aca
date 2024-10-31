@@ -527,3 +527,5 @@ Depuis la VM de rebond <br><br>
 - On teste l'application ( remarque, l'application répond uniquement en https !)
 
 # Conclusion
+Microsoft propose de nombreuses options permettant aux équipes de créer et de déployer des applications cloud natives et conteneurisées sur Azure, il n'existe pas de solution parfaite pour tous les cas d'utilisation et toutes les équipes.<br>
+Moi personnellement, je suis fan de "Azure Container Apps" !!!  
