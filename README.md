@@ -260,7 +260,7 @@ __Il y a plusieurs options pour déployer son code dans Azure Container Apps :__
 - Code local
 - Repo GitHUb
 - Depuis un IDE (Visual Studio, Visual Studio Code, extension Azure Account, Azure Container Apps, Docker ...)
-- Depuis un fichier artefact (fichier JAR/Maven),c'est en preview <br><br>
+- Depuis un fichier artefact (fichier JAR/Maven), c'est en preview !<br><br>
 
 S'il on choisi de déployer en mode "Code Local" & "Repo GitHub", il y a la posibilité de déployer une application sans faire un fichier Dockerfile en passant par la commande ```az containerapp up``` (supporte uniquement les langages .NET; Node.js; PHP; Python ). L'image est générée par l'outils "Buildpacks" (https://www.cncf.io/projects/buildpacks/)<br>
 Voici un exemple de code (proposé dans la doc Microsoft) ```az containerapp up``` avec le code (node.js) en local<br>
@@ -336,7 +336,7 @@ az containerapp create \
 On a également la possibilité de déployer une application en s'appuyant sur un fichier YAML <br>
 https://learn.microsoft.com/en-us/azure/container-instances/container-instances-reference-yaml <br>
 L'équivalent de la commande ci-dessus<br>
-
+Voici le fichier YAML à créer<br>
 
 ```
 location: France Central
@@ -376,6 +376,7 @@ properties:
       rules: null
   workloadProfileName: Consumption
 ```
+Pour déployer en s'appuyant sur le fichier YAML
 ```
 az containerapp create \
    --name $CONTAINERAPP_NAME \
