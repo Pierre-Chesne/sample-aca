@@ -483,12 +483,12 @@ az provider register --namespace Microsoft.App
 az provider register --namespace Microsoft.OperationalInsights
 ```
 <br>
-En bonus, pour tester et découvrir voici un script ./Az-Cli/aca-network.sh qui déploie: <br>
+En bonus, pour tester et découvrir voici un script (./Az-Cli/aca-network.sh) qui déploie: <br>
 
 - un "resource group"
 - un réseau 
   - vNet
-  - trois subnet dont un en "delegated Microsoft.App/environments" pour le "Container Apps Environment"
+  - trois subnets dont un en "delegated Microsoft.App/environments" pour le "Container Apps Environment"
 - PosgreSQL
   - serveur postgres flexible-server
   - une base
@@ -506,7 +506,7 @@ En bonus, pour tester et découvrir voici un script ./Az-Cli/aca-network.sh qui 
   - Assign Identity -> Container registry
   - Assign Role AcrPull
 - Azure Container App
-  - Secrets / variables (connexion base de données)
+  - Secrets / variables d'environnement (connexion base de données)
 
 <img width='800' src='./Images/deploi-17.png'/><br><br>
 Testons la plateforme:<br>
