@@ -47,7 +47,7 @@ On utilise __plusieurs environnements__ pour :<br>
 - Pour que les applications ne partagent pas l’API de Dapr
 - On recherche une isolation totale (Équipe, environnement test, production,  ….)
 
-Voici les propriétés d'un "Container Apps Environment":
+Voici les propriétés d'un "Container Apps Environment" (Az CLI):
 ```
 az containerapp env show \
    --name $CONTAINERAPPS_ENVIRONMENT \
